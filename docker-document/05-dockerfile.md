@@ -605,8 +605,7 @@ RUN Write-Host hello
 SHELL ["cmd", "/S"", "/C"]
 RUN echo hello
 ```
-
-The following instructions can be affected by the SHELL instruction when the shell form of them is used in a Dockerfile: RUN, CMD and ENTRYPOINT.
+RUN, CMD and ENTRYPOINT 会被SHELL instruction所影响
 
 The following example is a common pattern found on Windows which can be streamlined by using the SHELL instruction:
 
